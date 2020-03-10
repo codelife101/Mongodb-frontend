@@ -20,8 +20,14 @@
 
       <!-- homePage -->
       <div id="homePage">
-        This is my Home page
+        <button id="viewProducts" type="button" class="my-3 btn btn-dark rounded-pill mr-20px">View all Products</button>
+
+        <div id="productCards" class="row my-3">
+        </div>
       </div>
+
+
+
       <!-- adminPage -->
       <div id="adminPage" class="my-5 mx-3 px-3 bg-dark text-light">
 
@@ -30,9 +36,90 @@
         <button id="registerBtn" type="button" class="btn btn-dark rounded-pill mr-20px">Register</button>
         <button id="viewUserBtn" type="button" class="btn btn-dark rounded-pill">View all users</button>
 
-      </div>
 
-    </div>
+
+        <!-- login form -->
+        <form id="loginForm">
+        <label for="username" class=""> Username: </label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="username">
+
+        <label for="password" class=""> Password: </label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="password">
+        <!-- <input type="password" name="password" id="password" class="form-control" value="password"> -->
+
+        <button id="submit" name="button" type="submit" class="btn btn-lg btn-dark mt-4"> Submit </button>
+        </form>
+
+
+        <!-- registration form -->
+
+         <form id="registrationForm">
+        <label for="username" class=""> Username: </label>
+        <input type="text" id="usernameRegistration" name="username" class="form-control" placeholder="username">
+
+        <label for="password" class=""> Email: </label>
+        <input type="email" name="password" id="emailRegistration" class="form-control" placeholder="password">
+
+        <label for="password" class=""> Password: </label>
+        <input type="password" name="password" id="passwordRegistration" class="form-control" placeholder="password">
+        
+        <button id="submitRegistration" name="button" type="submit" class="btn btn-lg btn-dark mt-4"> Submit </button>
+        </form>
+
+
+
+
+
+
+
+        <!-- Product Manipulation -->
+
+        <!-- Manipulate products -->
+        <div id="manipulate">
+            <button id="addProductBtn" class="py-4 px-3 text-center btn-lg manipBtn" type="button" name="button">Add new product</button>
+            <button id="updateProductBtn" class="py-4 px-3 text-center btn-lg manipBtn" type="button" name="button">Update a product</button>
+            <button id="deleteProductBtn" class="py-4 px-3 text-center btn-lg manipBtn" type="button" name="button">Delete a product</button>
+        </div>
+
+        <!-- Input ID -->
+        <div id="inputIdDiv" class="">
+          <form id="productForm" class="bg-dark py-5 px-5">
+            <h1 class="text-primary"> Product Form </h1>   <br><br>
+            <label class="mr-5" for="productId"> Enter product Id: </label>
+            <input type="text" class="ml-5" id="productId" name="inputId" >
+            <br><br>
+
+            <label class="mr-4" for="productName"> Enter name of the product </label>
+            <input type="text" id="productName" name="productName" >
+            <br><br>
+
+            <label class="mr-4" for="productPrice"> Enter price of the product </label>
+            <input type="number" id="productPrice" name="productPrice" >
+            <br><br>
+
+            <label class="mr-5" for="userId"> Enter the userId </label>
+            <input type="text" class="ml-5" id="userId" name="userId" >
+            <br><br>
+
+            <button id="updateProduct" name="productButton" type="submit" class="btn btn-primary">Update product</button>
+          </form>
+        </div>
+
+
+
+
+
+      </div><!--admin page-->
+
+
+
+    </div><!--container-->
+
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
